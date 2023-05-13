@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080992F029FDB32600FE293E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9D6929EA3A2F0020DE14 /* Transaction.swift */; };
+		080992F129FDB32600FE293E /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9D6B29EA3B100020DE14 /* TransactionModel.swift */; };
+		08C1448A29E8981600DD5EF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1448929E8981600DD5EF1 /* AppDelegate.swift */; };
+		08C1448C29E8981600DD5EF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1448B29E8981600DD5EF1 /* SceneDelegate.swift */; };
+		08C1448E29E8981600DD5EF1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1448D29E8981600DD5EF1 /* MapViewController.swift */; };
+		08C1449129E8981600DD5EF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C1448F29E8981600DD5EF1 /* Main.storyboard */; };
+		08C1449329E8981700DD5EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C1449229E8981700DD5EF1 /* Assets.xcassets */; };
+		08C1449629E8981700DD5EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C1449429E8981700DD5EF1 /* LaunchScreen.storyboard */; };
+		08C1449E29E89D8700DD5EF1 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1449D29E89D8700DD5EF1 /* EntryViewController.swift */; };
+		08C144A029E89DAA00DD5EF1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C1449F29E89DAA00DD5EF1 /* TableViewController.swift */; };
+		922A9D6A29EA3A2F0020DE14 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9D6929EA3A2F0020DE14 /* Transaction.swift */; };
+		922A9D6C29EA3B100020DE14 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9D6B29EA3B100020DE14 /* TransactionModel.swift */; };
+		922A9D7029EA422B0020DE14 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922A9D6F29EA422B0020DE14 /* TableViewCell.swift */; };
+		9256908329F1CB73006F05BE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9256908229F1CB73006F05BE /* WidgetKit.framework */; };
+		9256908529F1CB73006F05BE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9256908429F1CB73006F05BE /* SwiftUI.framework */; };
+		9256908829F1CB73006F05BE /* CashMapWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256908729F1CB73006F05BE /* CashMapWidgetBundle.swift */; };
+		9256908A29F1CB73006F05BE /* CashMapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256908929F1CB73006F05BE /* CashMapWidget.swift */; };
+		9256908C29F1CB75006F05BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9256908B29F1CB75006F05BE /* Assets.xcassets */; };
+		9256909029F1CB75006F05BE /* CashMapWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9256908029F1CB73006F05BE /* CashMapWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		92BC937629F4DAD0001C8E0A /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC937529F4DAD0001C8E0A /* NotificationHelper.swift */; };
+		92BC937A29F4F05A001C8E0A /* TransactionPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BC937929F4F05A001C8E0A /* TransactionPin.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9256908E29F1CB75006F05BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08C1447E29E8981600DD5EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9256907F29F1CB73006F05BE;
+			remoteInfo = CashMapWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9256909129F1CB75006F05BE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9256909029F1CB75006F05BE /* CashMapWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		080992EF29FDA65300FE293E /* CashMapWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CashMapWidgetExtension.entitlements; sourceTree = "<group>"; };
+		08C1448629E8981600DD5EF1 /* CashMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C1448929E8981600DD5EF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08C1448B29E8981600DD5EF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08C1448D29E8981600DD5EF1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		08C1449029E8981600DD5EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08C1449229E8981700DD5EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C1449529E8981700DD5EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08C1449729E8981700DD5EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C1449D29E89D8700DD5EF1 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		08C1449F29E89DAA00DD5EF1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		922A9D6929EA3A2F0020DE14 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		922A9D6B29EA3B100020DE14 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		922A9D6F29EA422B0020DE14 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9256908029F1CB73006F05BE /* CashMapWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CashMapWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9256908229F1CB73006F05BE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9256908429F1CB73006F05BE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9256908729F1CB73006F05BE /* CashMapWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashMapWidgetBundle.swift; sourceTree = "<group>"; };
+		9256908929F1CB73006F05BE /* CashMapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashMapWidget.swift; sourceTree = "<group>"; };
+		9256908B29F1CB75006F05BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9256908D29F1CB75006F05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9256909529F1CC49006F05BE /* CashMap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CashMap.entitlements; sourceTree = "<group>"; };
+		92BC937529F4DAD0001C8E0A /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		92BC937929F4F05A001C8E0A /* TransactionPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPin.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C1448329E8981600DD5EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9256907D29F1CB73006F05BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9256908529F1CB73006F05BE /* SwiftUI.framework in Frameworks */,
+				9256908329F1CB73006F05BE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08C1447D29E8981600DD5EF1 = {
+			isa = PBXGroup;
+			children = (
+				080992EF29FDA65300FE293E /* CashMapWidgetExtension.entitlements */,
+				08C1448829E8981600DD5EF1 /* CashMap */,
+				9256908629F1CB73006F05BE /* CashMapWidget */,
+				9256908129F1CB73006F05BE /* Frameworks */,
+				08C1448729E8981600DD5EF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08C1448729E8981600DD5EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C1448629E8981600DD5EF1 /* CashMap.app */,
+				9256908029F1CB73006F05BE /* CashMapWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C1448829E8981600DD5EF1 /* CashMap */ = {
+			isa = PBXGroup;
+			children = (
+				9256909529F1CC49006F05BE /* CashMap.entitlements */,
+				08C1448929E8981600DD5EF1 /* AppDelegate.swift */,
+				92BC937529F4DAD0001C8E0A /* NotificationHelper.swift */,
+				08C1448B29E8981600DD5EF1 /* SceneDelegate.swift */,
+				08C1448D29E8981600DD5EF1 /* MapViewController.swift */,
+				92BC937929F4F05A001C8E0A /* TransactionPin.swift */,
+				08C1449F29E89DAA00DD5EF1 /* TableViewController.swift */,
+				08C1449D29E89D8700DD5EF1 /* EntryViewController.swift */,
+				08C1448F29E8981600DD5EF1 /* Main.storyboard */,
+				922A9D6F29EA422B0020DE14 /* TableViewCell.swift */,
+				08C1449229E8981700DD5EF1 /* Assets.xcassets */,
+				08C1449429E8981700DD5EF1 /* LaunchScreen.storyboard */,
+				08C1449729E8981700DD5EF1 /* Info.plist */,
+				922A9D6929EA3A2F0020DE14 /* Transaction.swift */,
+				922A9D6B29EA3B100020DE14 /* TransactionModel.swift */,
+			);
+			path = CashMap;
+			sourceTree = "<group>";
+		};
+		9256908129F1CB73006F05BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9256908229F1CB73006F05BE /* WidgetKit.framework */,
+				9256908429F1CB73006F05BE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9256908629F1CB73006F05BE /* CashMapWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9256908729F1CB73006F05BE /* CashMapWidgetBundle.swift */,
+				9256908929F1CB73006F05BE /* CashMapWidget.swift */,
+				9256908B29F1CB75006F05BE /* Assets.xcassets */,
+				9256908D29F1CB75006F05BE /* Info.plist */,
+			);
+			path = CashMapWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08C1448529E8981600DD5EF1 /* CashMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C1449A29E8981700DD5EF1 /* Build configuration list for PBXNativeTarget "CashMap" */;
+			buildPhases = (
+				08C1448229E8981600DD5EF1 /* Sources */,
+				08C1448329E8981600DD5EF1 /* Frameworks */,
+				08C1448429E8981600DD5EF1 /* Resources */,
+				9256909129F1CB75006F05BE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9256908F29F1CB75006F05BE /* PBXTargetDependency */,
+			);
+			name = CashMap;
+			productName = CashMap;
+			productReference = 08C1448629E8981600DD5EF1 /* CashMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9256907F29F1CB73006F05BE /* CashMapWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9256909429F1CB75006F05BE /* Build configuration list for PBXNativeTarget "CashMapWidgetExtension" */;
+			buildPhases = (
+				9256907C29F1CB73006F05BE /* Sources */,
+				9256907D29F1CB73006F05BE /* Frameworks */,
+				9256907E29F1CB73006F05BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CashMapWidgetExtension;
+			productName = CashMapWidgetExtension;
+			productReference = 9256908029F1CB73006F05BE /* CashMapWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08C1447E29E8981600DD5EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					08C1448529E8981600DD5EF1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					9256907F29F1CB73006F05BE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 08C1448129E8981600DD5EF1 /* Build configuration list for PBXProject "CashMap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08C1447D29E8981600DD5EF1;
+			productRefGroup = 08C1448729E8981600DD5EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08C1448529E8981600DD5EF1 /* CashMap */,
+				9256907F29F1CB73006F05BE /* CashMapWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08C1448429E8981600DD5EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C1449629E8981700DD5EF1 /* LaunchScreen.storyboard in Resources */,
+				08C1449329E8981700DD5EF1 /* Assets.xcassets in Resources */,
+				08C1449129E8981600DD5EF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9256907E29F1CB73006F05BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9256908C29F1CB75006F05BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08C1448229E8981600DD5EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C1448E29E8981600DD5EF1 /* MapViewController.swift in Sources */,
+				922A9D7029EA422B0020DE14 /* TableViewCell.swift in Sources */,
+				08C1449E29E89D8700DD5EF1 /* EntryViewController.swift in Sources */,
+				92BC937A29F4F05A001C8E0A /* TransactionPin.swift in Sources */,
+				922A9D6A29EA3A2F0020DE14 /* Transaction.swift in Sources */,
+				08C1448A29E8981600DD5EF1 /* AppDelegate.swift in Sources */,
+				92BC937629F4DAD0001C8E0A /* NotificationHelper.swift in Sources */,
+				922A9D6C29EA3B100020DE14 /* TransactionModel.swift in Sources */,
+				08C144A029E89DAA00DD5EF1 /* TableViewController.swift in Sources */,
+				08C1448C29E8981600DD5EF1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9256907C29F1CB73006F05BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080992F129FDB32600FE293E /* TransactionModel.swift in Sources */,
+				9256908829F1CB73006F05BE /* CashMapWidgetBundle.swift in Sources */,
+				9256908A29F1CB73006F05BE /* CashMapWidget.swift in Sources */,
+				080992F029FDB32600FE293E /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9256908F29F1CB75006F05BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9256907F29F1CB73006F05BE /* CashMapWidgetExtension */;
+			targetProxy = 9256908E29F1CB75006F05BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08C1448F29E8981600DD5EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C1449029E8981600DD5EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08C1449429E8981700DD5EF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08C1449529E8981700DD5EF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08C1449829E8981700DD5EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08C1449929E8981700DD5EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08C1449B29E8981700DD5EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CashMap/CashMap.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM556MSLB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CashMap/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "CashMap would like to use your current location to map your purchases.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.indiana.cs.c323-lukeatki.CashMap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08C1449C29E8981700DD5EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CashMap/CashMap.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM556MSLB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CashMap/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "CashMap would like to use your current location to map your purchases.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.indiana.cs.c323-lukeatki.CashMap";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9256909229F1CB75006F05BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CashMapWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM556MSLB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CashMapWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CashMapWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.indiana.cs.c323-lukeatki.CashMap.CashMapWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9256909329F1CB75006F05BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = CashMapWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LM556MSLB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CashMapWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CashMapWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.indiana.cs.c323-lukeatki.CashMap.CashMapWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08C1448129E8981600DD5EF1 /* Build configuration list for PBXProject "CashMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C1449829E8981700DD5EF1 /* Debug */,
+				08C1449929E8981700DD5EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C1449A29E8981700DD5EF1 /* Build configuration list for PBXNativeTarget "CashMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C1449B29E8981700DD5EF1 /* Debug */,
+				08C1449C29E8981700DD5EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9256909429F1CB75006F05BE /* Build configuration list for PBXNativeTarget "CashMapWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9256909229F1CB75006F05BE /* Debug */,
+				9256909329F1CB75006F05BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08C1447E29E8981600DD5EF1 /* Project object */;
+}
